@@ -22,6 +22,7 @@ class IngredientNode(DjangoObjectType):
             'category': ['exact'],
             'category__name': ['exact'],
         }
+        interfaces = (relay.Node,)
 
 class Query(graphene.ObjectType):
     category = relay.Node.Field(CategoryNode)
