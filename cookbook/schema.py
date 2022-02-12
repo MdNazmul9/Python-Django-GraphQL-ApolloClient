@@ -1,5 +1,6 @@
 import graphene
 import ingredients.schema 
+import ingredients.schema 
 
 
 class Query(ingredients.schema.Query, graphene.ObjectType):
